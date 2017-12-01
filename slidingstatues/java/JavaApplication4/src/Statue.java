@@ -13,15 +13,10 @@ public class Statue {
     private int type;
     private int x;    
     private int y;    
-    //defined by the game board, 5 for 5x5 board
-    private int boundry;
 
-    
-    public Statue(int x, int y, int boundry) {
+    public Statue(int x, int y) {
     this.x = x;
     this.y = y;    
-    this.boundry = boundry;
-
     }
     
     public void setType(int inputType) {
@@ -29,13 +24,14 @@ public class Statue {
     }
     
     public void moveStatue(int x, int y) {
-    //check if it exceeds boundry
-    if((x > boundry) && (y > boundry)){
-    //do nothing and or print custom msg?
-    } else {
     this.x = x;
     this.y = y;
     }
+    
+    public String displayInfo() {
+    
+        return "";
     }
+    
     
 }

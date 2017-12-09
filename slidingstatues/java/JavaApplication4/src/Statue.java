@@ -33,5 +33,16 @@ public class Statue {
         return "";
     }
     
+    /*
+    Gets coordinates for the statue piece from defined value (x or y)
+    */
+    public int getCoord(String input)
+    {
+        if((input) == "x") {
+          return this.x;  
+        } else {
+          return this.y;
+        }
+    } 
     
 }

@@ -23,4 +23,13 @@ public class Board {
     public void addStatue(Statue item){
     this.list[list.length] = item;
     }
+    
+    public void inspectStatues() {
+    System.out.print("Inspecting statues");
+    for(Statue x : this.list){
+        System.out.println(x.getCoord("x"));
+        System.out.println(x.getCoord("y"));
+    }
+    }
+    
 }

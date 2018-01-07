@@ -24,10 +24,20 @@ public class Board {
     this.list[list.length] = item;
     }
     
+<<<<<<< HEAD
     public String inspect() {
         //for debugging
      return  "id: " + this.id + " | size: " + this.size ;
     }
     
+=======
+    public void inspectStatues() {
+    System.out.print("Inspecting statues");
+    for(Statue x : this.list){
+        System.out.println(x.getCoord("x"));
+        System.out.println(x.getCoord("y"));
+    }
+    }
+>>>>>>> 23ac589371ac6dc35d4aa3df56fe7fa7f16ca077
     
 }

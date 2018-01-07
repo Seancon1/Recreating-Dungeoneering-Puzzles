@@ -42,4 +42,19 @@ public class Statue {
         return "type" + this.type + " ("+this.x+","+this.y+")";
     }
     
+<<<<<<< HEAD
+=======
+    /*
+    Gets coordinates for the statue piece from defined value (x or y)
+    */
+    public int getCoord(String input)
+    {
+        if((input) == "x") {
+          return this.x;  
+        } else {
+          return this.y;
+        }
+    } 
+    
+>>>>>>> 23ac589371ac6dc35d4aa3df56fe7fa7f16ca077
 }

@@ -19,6 +19,16 @@ public class Statue {
     this.y = y;    
     }
     
+    public int getType() {
+    return this.type;
+    }
+    public int getX() {
+    return this.x;
+    }
+    public int getY() {
+    return this.y;
+    }
+    
     public void setType(int inputType) {
     this.type = inputType;
     }
@@ -26,12 +36,10 @@ public class Statue {
     public void moveStatue(int x, int y) {
     this.x = x;
     this.y = y;
+    } 
+    
+    public String inspect() {
+        return "type" + this.type + " ("+this.x+","+this.y+")";
     }
-    
-    public String displayInfo() {
-    
-        return "";
-    }
-    
     
 }

@@ -23,4 +23,11 @@ public class Board {
     public void addStatue(Statue item){
     this.list[list.length] = item;
     }
+    
+    public String inspect() {
+        //for debugging
+     return  "id: " + this.id + " | size: " + this.size ;
+    }
+    
+    
 }

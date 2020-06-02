@@ -13,7 +13,7 @@ public class Board {
     
     private int size;
     private int id;
-    private static Statue[] list;
+    private Statue[] list;
     
     public Board(int id, int size) {
         this.id = id;
@@ -21,23 +21,23 @@ public class Board {
     }
     
     public void addStatue(Statue item){
-    this.list[list.length] = item;
+        this.list[list.length] = item;
     }
     
-<<<<<<< HEAD
+
     public String inspect() {
         //for debugging
      return  "id: " + this.id + " | size: " + this.size ;
     }
     
-=======
+
     public void inspectStatues() {
-    System.out.print("Inspecting statues");
-    for(Statue x : this.list){
-        System.out.println(x.getCoord("x"));
-        System.out.println(x.getCoord("y"));
+        System.out.print("Inspecting statues");
+        
+        for(Statue x : this.list){
+            System.out.println(x.getCoord("x"));
+            System.out.println(x.getCoord("y"));
+        }
     }
-    }
->>>>>>> 23ac589371ac6dc35d4aa3df56fe7fa7f16ca077
-    
+
 }

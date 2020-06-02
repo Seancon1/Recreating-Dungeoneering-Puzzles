@@ -15,35 +15,28 @@ public class Statue {
     private int y;    
 
     public Statue(int x, int y) {
-    this.x = x;
-    this.y = y;    
+        this.x = x;
+        this.y = y;    
     }
     
-    public int getType() {
-    return this.type;
-    }
-    public int getX() {
-    return this.x;
-    }
-    public int getY() {
-    return this.y;
-    }
+    //Getter, Setters
     
-    public void setType(int inputType) {
-    this.type = inputType;
-    }
+    public int getType() { return this.type; }
+    public int getX() {return this.x;}
+    public int getY() {return this.y;}
+    
+    public void setType(int inputType) {this.type = inputType;}
     
     public void moveStatue(int x, int y) {
-    this.x = x;
-    this.y = y;
+        this.x = x;
+        this.y = y;
     } 
     
     public String inspect() {
         return "type" + this.type + " ("+this.x+","+this.y+")";
     }
     
-<<<<<<< HEAD
-=======
+
     /*
     Gets coordinates for the statue piece from defined value (x or y)
     */
@@ -56,5 +49,4 @@ public class Statue {
         }
     } 
     
->>>>>>> 23ac589371ac6dc35d4aa3df56fe7fa7f16ca077
 }
